@@ -1,1 +1,83 @@
-<h1 class="bg-black text-white">Hello, World!</h1>
+<div class="bg-light-grayish-cyan h-screen w-screen flex flex-col items-center">
+  <div class="font-mono text-header text-very-dark-cyan w-screen flex flex-col items-center my-10">
+    <span>SPLI</span><span>TTER</span>
+  </div>
+  <div class="h-screen w-screen rounded-t-[30px] bg-white flex flex-col items-center">
+    <div class="mx-8 mt-2">
+
+      <!-- BILL input -->
+      <div class="mt-8 ">
+        <label for="bill-amount" class="block font-mono font-extrabold text-dark-grayish-cyan mb-3">Bill</label>
+        <div class="bg-very-light-grayish-cyan flex flex-row justify-around py-1 rounded-md ">
+          <img src="/assets/dollar.svg" class="h-[20px] my-[5px] pl-[-1px]">
+          <input type="number" value="142.55"
+            class="appearance-none bg-very-light-grayish-cyan rounded-sm text-xl h-[30px] text-right font-mono font-extrabold text-very-dark-cyan">
+        </div>
+      </div>
+
+      <!-- TIP percentage input -->
+      <div class="mt-8">
+        <label for="tip-percentage" class="block font-mono font-extrabold text-dark-grayish-cyan mb-3">Select Tip
+          %</label>
+        <div class="flex flex-wrap flex-row justify-evenly gap-3 font-mono font-bold  ">
+          <button
+            class="rounded-lg min-h-[48px] py-3 w-[148px]   bg-very-dark-cyan text-center text-very-light-grayish-cyan">
+            <span class="">5%</span>
+          </button>
+          <button
+            class="rounded-lg min-h-[48px]  py-3 w-[148px]  bg-very-dark-cyan text-center text-very-light-grayish-cyan">
+            <span>10%</span>
+          </button>
+          <button
+            class="rounded-lg min-h-[48px] py-3 w-[148px]  bg-very-dark-cyan text-center text-very-light-grayish-cyan">
+            <span>15%</span>
+          </button>
+          <button
+            class="rounded-lg min-h-[48px] py-3 w-[148px]  bg-very-dark-cyan text-center text-very-light-grayish-cyan">
+            <span>20%</span>
+          </button>
+          <button
+            class="rounded-lg min-h-[48px] py-3 w-[148px]  bg-very-dark-cyan text-center text-very-light-grayish-cyan">
+            <span>25%</span>
+          </button>
+          <button
+            class="rounded-lg min-h-[48px] py-3 w-[148px]  bg-very-light-grayish-cyan text-center text-grayish-cyan">
+            Custom</button>
+        </div>
+      </div>
+
+      <!-- Number of people -->
+      <div class="mt-8">
+        <label for="bill-amount" class="block font-mono font-extrabold text-dark-grayish-cyan mb-3">Number of
+          People</label>
+        <div class="bg-very-light-grayish-cyan flex flex-row justify-around py-1 rounded-md ">
+          <img src="/assets/person.svg" class="h-[20px] my-[5px] pl-[-1px]">
+          <input type="number" value="5"
+            class="appearance-none bg-very-light-grayish-cyan rounded-sm text-xl h-[30px] text-right font-mono font-extrabold text-very-dark-cyan">
+        </div>
+      </div>
+
+      <!-- total card -->
+      <div class="mt-8 mb-10 bg-very-dark-cyan rounded-xl flex flex-col items-center gap-y-6 pt-10 pb-4">
+        <div class="flex flex-row gap-x-28">
+          <label class="block">
+            <span class="text-very-light-grayish-cyan font-mono font-bold">Tip Amount</span><br>
+            <span class="text-grayish-cyan font-mono tracking-tighter">/ person</span>
+          </label>
+          <span class="mr-3 font-mono font-bold text-lg text-strong-cyan"><span>$</span>4.27</span>
+        </div>
+        <div class="flex flex-row gap-x-28">
+          <label for="block">
+            <span class="text-very-light-grayish-cyan font-mono font-bold">Total</span><br>
+            <span class="text-grayish-cyan font-mono tracking-tighter">/ person</span>
+          </label>
+          <span class="mr-3 font-mono font-bold text-lg text-strong-cyan"><span>$</span>32.79</span>
+        </div>
+        <div class="">
+          <button type="reset"
+            class="bg-strong-cyan py-2 w-[280px] rounded-md font-mono font-semibold text-very-dark-cyan tracking-wider">RESET</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
